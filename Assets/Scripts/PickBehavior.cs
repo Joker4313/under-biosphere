@@ -17,7 +17,7 @@ public class PickBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     void Update()
@@ -29,8 +29,9 @@ public class PickBehavior : MonoBehaviour
                 //Put this item into the item list
                 //δ���-�����Լ�����Ŀɲɼ���Ʒ���뱳����nearestPickable��
                 //TODO
-
-                
+                string name = nearestInteractable.GetComponent<PickableItemBehaviour>().itemName;
+                //Q:call Additem method in inventory to add item
+                Inventory.Instance.AddItem(name, 1);
 
                 UISupport.GetComponent<UISupporter>().closeNotice();
                 pickableDic.Remove(nearestInteractable);
@@ -50,10 +51,11 @@ public class PickBehavior : MonoBehaviour
                     }
                     else
                     {
-                        //TODO
-                        //Put this item into the item list
-                        //δ���-��������Ʒ���뱳����nearestMinable��
-                        //TODO
+                        string name = nearestInteractable.GetComponent<MinableItemBehaviour>().minableName;
+                        //Q:call Additem method in inventory to add item
+                        Inventory.Instance.AddItem(name, 1);
+
+
                         UISupport.GetComponent<UISupporter>().closeNotice();
                         pickableDic.Remove(nearestInteractable);
                         Destroy(nearestInteractable);

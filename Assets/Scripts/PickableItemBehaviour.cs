@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PickableItemBehaviour : MonoBehaviour
 {
-    public int itemId = 0;
+    // public int itemId = 0;
     public string itemName = "Item";
     public float highlightLevel = 1.5f;
     public bool isNote = false;

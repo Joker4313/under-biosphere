@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MinableItemBehaviour : MonoBehaviour
 {
-    public int minableId = 0;
+    public string minableName;
     public string minableNote = "???";
     public string minableNoteUndercon = "???";
     public float minableAmount = 10f;
@@ -80,7 +80,7 @@ public class MinableItemBehaviour : MonoBehaviour
     public bool underCondition()
     {
         //TODO
-        //´ý²¹³ä£¬ÅÐ¶ÏÊÇ·ñÂú×ã¿ª²É/¿ªÃÅÌõ¼þ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ä£¬ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ã¿ªï¿½ï¿½/ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         //TODO
         return true;
     }

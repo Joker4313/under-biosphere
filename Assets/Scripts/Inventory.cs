@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+
+    public static Inventory Instance { get; private set; }
+
     private List<Item> items; // 背包中的物品
     public InventoryUI inventoryUI; // 背包的 UI
 

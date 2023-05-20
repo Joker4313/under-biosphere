@@ -65,7 +65,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6695003846789727565, guid: bae468b3a6b9ea141967f3cfbe601352, type: 3}
       propertyPath: m_Name
-      value: Tree_04 (8)
+      value: Tree
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bae468b3a6b9ea141967f3cfbe601352, type: 3}
+--- !u!1 &5956477483171092924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6695003846789727565, guid: bae468b3a6b9ea141967f3cfbe601352, type: 3}
+  m_PrefabInstance: {fileID: 1027038627600801009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &-759321114565353786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5956477483171092924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e974957a6a0584f9ef28e03467818c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minableName: Tree
+  minableNote: ???
+  minableNoteUndercon: ???
+  minableAmount: 10
+  highlightLevel: 1.5
+  isDoor: 0
+  doorId: 0
+  requireList: 

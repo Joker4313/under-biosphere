@@ -4,11 +4,24 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
 
-    public static Inventory Instance { get; private set; }
+
 
     private List<Item> items; // 背包中的物品
     public InventoryUI inventoryUI; // 背包的 UI
+    public static Inventory Instance { get; private set; }
 
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     private void Start()
     {
         // 初始化背包
@@ -83,11 +96,28 @@ public class Inventory : MonoBehaviour
         inventoryUI.UpdateUI(items);
     }
 
+    public int GetItemCount(string name)
+    {
+        // 查找物品
+        Item item = items.Find(i => i.type.name == name);
+
+        // 如果物品存在，返回数量
+        if (item != null)
+        {
+            return item.quantity;
+        }
+
+        // 否则，返回 0
+        return 0;
+    }
+
 
     public void AddTestItems()
     {
-        AddItem("Chocolate", 10);
-        AddItem("Barrel", 5);
-        AddItem("Lighter", 20);
+        AddItem("Rock", 10);
+        AddItem("Firewoods", 5);
+        AddItem("Rope", 20);
     }
+
+
 }

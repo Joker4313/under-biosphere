@@ -84,7 +84,7 @@ public class Inventory : MonoBehaviour
     public void AddTestItems()
     {
         AddItem("Chocolate", 10);
-        AddItem("Fuel Tank", 5);
+        AddItem("Barrel", 5);
         AddItem("Lighter", 20);
     }
 }

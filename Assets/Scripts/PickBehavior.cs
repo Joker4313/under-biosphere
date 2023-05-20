@@ -27,8 +27,10 @@ public class PickBehavior : MonoBehaviour
             {
                 //TODO
                 //Put this item into the item list
-                //Î´Íê³É-½«Àë×Ô¼º×î½üµÄ¿É²É¼¯ÎïÆ··ÅÈë±³°ü£¨nearestPickable£©
+                //Î´ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿É²É¼ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ë±³ï¿½ï¿½ï¿½ï¿½nearestPickableï¿½ï¿½
                 //TODO
+
+                
 
                 UISupport.GetComponent<UISupporter>().closeNotice();
                 pickableDic.Remove(nearestInteractable);
@@ -50,7 +52,7 @@ public class PickBehavior : MonoBehaviour
                     {
                         //TODO
                         //Put this item into the item list
-                        //Î´Íê³É-½«¿ª²ÉÎïÆ··ÅÈë±³°ü£¨nearestMinable£©
+                        //Î´ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ë±³ï¿½ï¿½ï¿½ï¿½nearestMinableï¿½ï¿½
                         //TODO
                         UISupport.GetComponent<UISupporter>().closeNotice();
                         pickableDic.Remove(nearestInteractable);
@@ -103,7 +105,7 @@ public class PickBehavior : MonoBehaviour
                     nearestInteractable = pair.Key;
                     nearestDistance = pair.Value;
                     nearestInteractable.GetComponent<MinableItemBehaviour>().Highlight();
-                    if (nearestInteractable.GetComponent<MinableItemBehaviour>().underCondition()) //Ìõ¼þºÍ·½·¨²ÎÊý´ý²¹³ä
+                    if (nearestInteractable.GetComponent<MinableItemBehaviour>().underCondition()) //ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                         UISupport.GetComponent<UISupporter>().itemNotice(nearestInteractable.GetComponent<MinableItemBehaviour>().minableNoteUndercon + " " + string.Format("{0:f2}", nearestInteractable.GetComponent<MinableItemBehaviour>().getProgress() * 100) + "%");
                     else
                         UISupport.GetComponent<UISupporter>().itemNotice(nearestInteractable.GetComponent<MinableItemBehaviour>().minableNote);

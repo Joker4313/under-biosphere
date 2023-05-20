@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6050343389425998693, guid: b5a95cf66868e4ec4b9b4748c978fa99, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a95cf66868e4ec4b9b4748c978fa99, type: 3}
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 23894688}
   - component: {fileID: 23894690}
   - component: {fileID: 23894689}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NameBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &240442572
 Transform:
   m_ObjectHideFlags: 0
@@ -650,7 +650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 357841025}
   - component: {fileID: 357841027}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -749,7 +749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 776334188197402191, guid: 8366842b8e4364ac8a48b39195885a26, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8366842b8e4364ac8a48b39195885a26, type: 3}
@@ -815,7 +815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4538774778694112754, guid: beacef4b4ce2841b4a8956b544170196, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: beacef4b4ce2841b4a8956b544170196, type: 3}
@@ -829,7 +829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 484700777}
   - component: {fileID: 484700778}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -880,7 +880,7 @@ GameObject:
   - component: {fileID: 513561393}
   - component: {fileID: 513561395}
   - component: {fileID: 513561394}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -906,7 +906,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -473.46783, y: 0}
+  m_AnchoredPosition: {x: -473.46777, y: 0}
   m_SizeDelta: {x: -946.9348, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &513561394
@@ -1157,7 +1157,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4638405673032825674, guid: a04bb36acdadf334484db692c06439fc, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4959788216149086037, guid: a04bb36acdadf334484db692c06439fc, type: 3}
       propertyPath: m_LocalScale.x
@@ -1679,7 +1679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6050343389425998693, guid: b5a95cf66868e4ec4b9b4748c978fa99, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a95cf66868e4ec4b9b4748c978fa99, type: 3}
@@ -1923,7 +1923,7 @@ GameObject:
   - component: {fileID: 1234801122}
   - component: {fileID: 1234801121}
   - component: {fileID: 1234801120}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2081,7 +2081,7 @@ GameObject:
   - component: {fileID: 1243322008}
   - component: {fileID: 1243322010}
   - component: {fileID: 1243322009}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3025,156 +3025,150 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemTypes:
-  - id: 0
-    name: Chocolate
-    icon: {fileID: 21300000, guid: ea3d1fed013da4f92950c57e90693295, type: 3}
-    description: Moderate satiety and a small amount of health replenishment
-    type: 0
-  - id: 1
-    name: Energy drink
-    icon: {fileID: 21300000, guid: d5d7330451e3a45929079ebbd3d57c1a, type: 3}
-    description: Small amount of satiety and a small amount of health replenishment
-    type: 0
-  - id: 2
-    name: Canned food
-    icon: {fileID: 21300000, guid: 9faaf05d966324eb3b3502b8e8f80d2d, type: 3}
-    description: Large amount of satiety and a small amount of health replenishment
-    type: 0
-  - id: 0
-    name: Bait
-    icon: {fileID: 21300000, guid: e29c6b96770f04d87a982b5dbb9e9a43, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 1
-  - id: 0
-    name: Animal Meat
+  - name: Animal Meat
     icon: {fileID: 21300000, guid: 7a61b36ea5ba64e86810db9e273d5b30, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 1
-  - id: 0
-    name: Cooked animal meat
-    icon: {fileID: 21300000, guid: acced49a44a7f461081f090a602c48c3, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 1
-  - id: 0
-    name: Bandage
-    icon: {fileID: 21300000, guid: f85cf23fff0de4d2f92681075193254f, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 2
-  - id: 0
-    name: Antidote
+  - name: Antidote
     icon: {fileID: 21300000, guid: 8b76c7cad61364c97b2fed0b5e0a7659, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 2
-  - id: 0
-    name: Barrel
-    icon: {fileID: 21300000, guid: 609a87659e0734a759e074a6310e1b82, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 3
-  - id: 0
-    name: Lighter
-    icon: {fileID: 21300000, guid: 15da246eb1b09495780f8eac71c4254d, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 4
-  - id: 0
-    name: Cable cutter
-    icon: {fileID: 21300000, guid: 6ec5e2f5243a7447e81d908f930da949, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 4
-  - id: 0
-    name: Axe
+  - name: Axe
     icon: {fileID: 21300000, guid: ca50ff5d96f4e428393af4e68ef70fc9, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 4
-  - id: 0
-    name: Hammer
-    icon: {fileID: 21300000, guid: 0cb54708dfc5f4842b3b0ca9c6c9f56a, type: 3}
+  - name: Bait
+    icon: {fileID: 21300000, guid: e29c6b96770f04d87a982b5dbb9e9a43, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 1
+  - name: Bandage
+    icon: {fileID: 21300000, guid: f85cf23fff0de4d2f92681075193254f, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 2
+  - name: Barrel
+    icon: {fileID: 21300000, guid: 609a87659e0734a759e074a6310e1b82, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 3
+  - name: Bonfire
+    icon: {fileID: 21300000, guid: 04cca1c060c3745dbb1e97bdcb49ec56, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 5
+  - name: Cable cutter
+    icon: {fileID: 21300000, guid: 6ec5e2f5243a7447e81d908f930da949, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 4
-  - id: 0
-    name: Saw
-    icon: {fileID: 21300000, guid: be4a4caa4d42745a78e8d77a86bd6800, type: 3}
+  - name: Canned food
+    icon: {fileID: 21300000, guid: 9faaf05d966324eb3b3502b8e8f80d2d, type: 3}
+    description: Large amount of satiety and a small amount of health replenishment
+    type: 0
+  - name: Chocolate
+    icon: {fileID: 21300000, guid: ea3d1fed013da4f92950c57e90693295, type: 3}
+    description: Moderate satiety and a small amount of health replenishment
+    type: 0
+  - name: Cooked animal meat
+    icon: {fileID: 21300000, guid: acced49a44a7f461081f090a602c48c3, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 1
+  - name: Crowbar
+    icon: {fileID: 21300000, guid: dc0eaf47288664baba091743cdad250d, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 4
-  - id: 0
-    name: Grass
-    icon: {fileID: 21300000, guid: 9f95af4c751074f069c8133e90652e79, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 3
-  - id: 0
-    name: Rope
-    icon: {fileID: 21300000, guid: 06a6a7c75624e49a19308de732d4c8c0, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 3
-  - id: 0
-    name: Rock
-    icon: {fileID: 21300000, guid: 4ae0e451eb5fc4059a3fd66648c68495, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 3
-  - id: 0
-    name: Electronic element
+  - name: Electronic element
     icon: {fileID: 21300000, guid: d72f776011c124f77a36cd2ead66ad1f, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 3
-  - id: 0
-    name: Scrap metal
-    icon: {fileID: 21300000, guid: 608cc3c144d7742ae8cc8cddcb9fe714, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 3
-  - id: 0
-    name: Wire
-    icon: {fileID: 21300000, guid: b6a76b97ffdc6431a9901b32b0e75324, type: 3}
-    description: Very minimal amount of satiety, can be used to capture animals in
-      rabbit traps or fishing nets.
-    type: 3
-  - id: 0
-    name: Engine
+  - name: Energy drink
+    icon: {fileID: 21300000, guid: d5d7330451e3a45929079ebbd3d57c1a, type: 3}
+    description: Small amount of satiety and a small amount of health replenishment
+    type: 0
+  - name: Engine
     icon: {fileID: 21300000, guid: 671820ec81833439c865abd1c94aa073, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 3
-  - id: 0
-    name: Rabbit cage
-    icon: {fileID: 21300000, guid: 1560af38c40524effb36476e96175a98, type: 3}
+  - name: Firewoods
+    icon: {fileID: 21300000, guid: 250c868673aad46f69f5c2791d8e42e5, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
-    type: 5
-  - id: 0
-    name: Bonfire
-    icon: {fileID: 0}
+    type: 3
+  - name: Grass
+    icon: {fileID: 21300000, guid: 9f95af4c751074f069c8133e90652e79, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
-    type: 5
-  - id: 0
-    name: Research institute key
+    type: 3
+  - name: Hammer
+    icon: {fileID: 21300000, guid: 0cb54708dfc5f4842b3b0ca9c6c9f56a, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 4
+  - name: Key
     icon: {fileID: 21300000, guid: 96f17045e22fd4e18902ad0e6c636b26, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 6
-  - id: 0
-    name: Wood boat
-    icon: {fileID: 21300000, guid: 389582142756842f5a71f5b1a72126e8, type: 3}
+  - name: Lighter
+    icon: {fileID: 21300000, guid: 15da246eb1b09495780f8eac71c4254d, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 4
+  - name: Notebook
+    icon: {fileID: 21300000, guid: 06f6ac6bd3b9348ff808600ee4b48edf, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 6
-  - id: 0
-    name: Notebook
-    icon: {fileID: 21300000, guid: 06f6ac6bd3b9348ff808600ee4b48edf, type: 3}
+  - name: Potherb
+    icon: {fileID: 21300000, guid: f9b8b167a19b6424cbe4c1d05d310a7f, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 1
+  - name: Rabbit cage
+    icon: {fileID: 21300000, guid: 1560af38c40524effb36476e96175a98, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 5
+  - name: Radicant
+    icon: {fileID: 21300000, guid: fac7de9f280714c04bbf0b6ba6740736, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 0
+  - name: Rock
+    icon: {fileID: 21300000, guid: 4ae0e451eb5fc4059a3fd66648c68495, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 3
+  - name: Rope
+    icon: {fileID: 21300000, guid: 06a6a7c75624e49a19308de732d4c8c0, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 3
+  - name: Saw
+    icon: {fileID: 21300000, guid: be4a4caa4d42745a78e8d77a86bd6800, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 4
+  - name: Scrap metal
+    icon: {fileID: 21300000, guid: 608cc3c144d7742ae8cc8cddcb9fe714, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 3
+  - name: Wire
+    icon: {fileID: 21300000, guid: b6a76b97ffdc6431a9901b32b0e75324, type: 3}
+    description: Very minimal amount of satiety, can be used to capture animals in
+      rabbit traps or fishing nets.
+    type: 3
+  - name: Wood boat
+    icon: {fileID: 21300000, guid: 389582142756842f5a71f5b1a72126e8, type: 3}
     description: Very minimal amount of satiety, can be used to capture animals in
       rabbit traps or fishing nets.
     type: 6
@@ -3191,7 +3185,7 @@ GameObject:
   - component: {fileID: 1705180680}
   - component: {fileID: 1705180679}
   - component: {fileID: 1705180678}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3439,7 +3433,7 @@ GameObject:
   - component: {fileID: 1724960658}
   - component: {fileID: 1724960660}
   - component: {fileID: 1724960659}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3523,7 +3517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4908012016863624227, guid: 3bdf489bf2a074741bb99bc8de275b83, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5717058319805408921, guid: 3bdf489bf2a074741bb99bc8de275b83, type: 3}
       propertyPath: m_RootOrder
@@ -3580,7 +3574,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1848029197}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3745,7 +3739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6050343389425998693, guid: b5a95cf66868e4ec4b9b4748c978fa99, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5a95cf66868e4ec4b9b4748c978fa99, type: 3}
@@ -3779,7 +3773,7 @@ GameObject:
   - component: {fileID: 2119220025}
   - component: {fileID: 2119220024}
   - component: {fileID: 2119220023}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BagCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3860,7 +3854,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 1964966976}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 5
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -3868,7 +3862,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!4 &2124434040 stripped
 Transform:
@@ -3887,6 +3881,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1234801119}
     m_Modifications:
+    - target: {fileID: 994796068252728273, guid: 45c70470242c8c949b6d0129de83bb1a, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206322816055593678, guid: 45c70470242c8c949b6d0129de83bb1a, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2592752704003050266, guid: 45c70470242c8c949b6d0129de83bb1a, type: 3}
       propertyPath: m_SizeDelta.y
       value: 100
@@ -3902,6 +3904,14 @@ PrefabInstance:
     - target: {fileID: 6020245456623999390, guid: 45c70470242c8c949b6d0129de83bb1a, type: 3}
       propertyPath: m_Name
       value: Image
+      objectReference: {fileID: 0}
+    - target: {fileID: 6020245456623999390, guid: 45c70470242c8c949b6d0129de83bb1a, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6495109424662939243, guid: 45c70470242c8c949b6d0129de83bb1a, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6624972349124436926, guid: 45c70470242c8c949b6d0129de83bb1a, type: 3}
       propertyPath: m_AnchoredPosition.x

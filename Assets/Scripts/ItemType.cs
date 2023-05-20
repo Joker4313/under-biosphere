@@ -13,7 +13,6 @@ public class ItemType
         Equipment,
         Important
     }
-    public int id;
     public string name; // 物品名字
     public Sprite icon; // 物品图标
     public string description; // 物品描述
